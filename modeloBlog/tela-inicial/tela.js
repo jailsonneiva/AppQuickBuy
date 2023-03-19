@@ -19,10 +19,13 @@ document.getElementById("btn1").addEventListener("click", list);
 // FUNÇÃO LIST CLICK...........
 
 document.getElementById("texto").focus();
-var p = document.createElement("p");
-var aviso = document.createTextNode("parágrafo")
+var p = document.createElement("h1");
+var txtNode = document.createTextNode("digite - \"tesoura\" ");
+p.appendChild(txtNode);
+
 
 function list(){ 
+ 
   
   var texto= document.getElementById("texto").value.toLowerCase();
   var zIndex = document.getElementById("texto").style.zIndex=0;
@@ -31,17 +34,21 @@ function list(){
       document.querySelector("#p1").style.display="block";
       document.getElementById("texto").style.zIndex=1; 
   
-    }else if(texto&& texto!="tesoura"){
+    }else if(texto && texto!="tesoura"){
       document.getElementById("p2").innerHTML="Inválido";
-      zIndex;
-      document.getElementById("texto").value="";
+      zIndex;            
+      document.getElementById("texto").focus();
+        function remove(){
+          document.getElementById("botoes").appendChild(p);
+        }
+        setTimeout(remove, 2000).remove()         
+
     }else {
-    document.getElementById("p2").innerHTML="Inválido";
+    document.getElementById("p2").innerHTML="Digite alguma coisa";
       zIndex;
-      document.getElementById("texto").value="";
+      document.getElementById("texto").value="";    
     }
-}
- 
+} 
 document.getElementById("btn1").addEventListener("click", list);
 
 // FUNÇÃO LIMPAR .........
@@ -52,7 +59,7 @@ function limpar(){
   document.querySelector("#p1").style.display="none"; 
   document.querySelector("#texto").style.zIndex=1;
   document.getElementById("texto").focus();
-  removeChild(p);
+  document.getElementById("botoes").appendChild(p).remove();
 }
 document.getElementById("btn2").addEventListener("click", limpar);
 
