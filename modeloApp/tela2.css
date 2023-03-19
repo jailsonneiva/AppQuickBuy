@@ -1,0 +1,92 @@
+section#tela1{
+    background-image:linear-gradient(-45deg, #2C3759, #3264A6, #2C3759, #3264A6, #2C3759);
+    margin:10px auto 0;
+    padding:0;
+    width:clamp(25rem, 3vw, 4rem);
+    height:clamp(52rem, 3vw, 4rem);
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoJdCM0Xjy3b8uBdpNItE0eYYj3YTmadSD5yPsdWOphIYUuHKbVSpBwHCApsGvmT7jw2UBkWUmszu_YGhRmFdyqelqTNgm3Fu6viiThQV_X_cWxPlH_Aomxow8krRlPKxF2RPvlRobkA_OcAzf2p0XhbafQQuQTA2CsPcp3NOkUnXhVSA3cQCABcyuag/s320/tel4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div#quickSearchImg{
+    margin:0;
+    padding:0;
+    text-align: center;
+    width:clamp(25rem, 2vw, 3rem);
+    max-height:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#quick-img{
+    margin:5em auto 0;
+    padding:0;
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+    display:flex;
+}
+#quick-img figure{
+    margin:0;
+    padding:0;
+    width:clamp(19.5rem, 3vw, 3rem);
+    height:clamp(7.5rem, 3vw, 3rem);    
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihPRUS0gFFIBjnIp3DdrKWkUNUz8zu6frqW51Y6U8Av83AfmVuu5gcEPXaBbCiTu0MsIzhWQN-h18GG90bQvB4FyRNa6v99QbSKDMLg31mR7NocORqMJ5J3q0cL5EacfstWFaED8Vo7GEDOU7URSeWwkWAdumzITvQnMCC1yVE7_W2wBc5KIwnSKPooQ/s320/app1.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    text-align: center;
+    filter: drop-shadow(0 0 .5rem #0f47e2);
+    border-radius:15px;
+}
+div#informeLoja{
+    margin:20px auto 0;
+      padding:0 ;
+      width:clamp(22.5rem, 2vw, 3rem);
+      height:clamp(36rem, 1vw, 3rem);
+      border-radius:30px 30px 30px 30px;
+}
+h2.loja{
+    margin:0;
+    padding:5px 0;
+    max-width:100%;
+    max-height: 100%; 
+    color:#bef8fa;
+}
+h3.tit-end{
+    margin:0;
+    padding:10px 0 5px 10px;
+    text-align: justify;
+    max-width:100%;
+    max-height: 100%; 
+    font-size:clamp(1.1rem, 1.5vw, 1.3rem);
+}
+.pTela{
+    text-align: justify;
+    color:#f3e5e5;
+    margin-bottom: 10px;
+    padding:10px 10px;
+    max-width: 100%;
+    max-height:100%;
+    display:flex;
+    align-items: center;
+    font-size:clamp(1.2rem, 1.1vw, 1.3rem);
+    box-shadow: 0 0 .5rem #808bc9;
+}
+p.Ender{
+    margin-bottom: 10px;
+}
+.a_tela{
+    text-decoration: none;
+    text-align: justify;
+    color:#ff0;
+    display:block;
+    margin:0;
+    padding:10px;
+    max-width: 100%;
+    max-height:100%;
+    box-shadow: 0 0 .5rem #808bc9;
+}
+.a_tela:hover{
+    color:#ee9d9d;
+}
