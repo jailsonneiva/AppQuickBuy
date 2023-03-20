@@ -7,6 +7,7 @@ section#tela1{
     background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoJdCM0Xjy3b8uBdpNItE0eYYj3YTmadSD5yPsdWOphIYUuHKbVSpBwHCApsGvmT7jw2UBkWUmszu_YGhRmFdyqelqTNgm3Fu6viiThQV_X_cWxPlH_Aomxow8krRlPKxF2RPvlRobkA_OcAzf2p0XhbafQQuQTA2CsPcp3NOkUnXhVSA3cQCABcyuag/s320/tel4.png");
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 div#quickSearchImg{
     margin:0;
@@ -18,6 +19,7 @@ div#quickSearchImg{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 #quick-img{
     margin:5em auto 0;
@@ -39,19 +41,31 @@ div#quickSearchImg{
     filter: drop-shadow(0 0 .5rem #0f47e2);
     border-radius:15px;
 }
+span.label{
+    color:#fff;
+}
 div.informeLoja{
     margin:20px auto 0;
-      padding:0 ;
-      width:clamp(22.5rem, 2vw, 3rem);
-      height:clamp(36rem, 1vw, 3rem);
-      border-radius:30px 30px 30px 30px;
+    padding:0 ;
+    width:clamp(22.5rem, 2vw, 3rem);
+    height:clamp(36rem, 1vw, 3rem);
+    border-radius:30px 30px 30px 30px;
+}
+div.informeMap iframe{
+    margin:20px auto 0;
+    padding:0 ;
+    width:100px;
+    height:clamp(36rem, 1vw, 3rem);
+    border-radius:30px 30px 30px 30px;
 }
 h2.loja{
     margin:0;
     padding:5px 0;
     max-width:100%;
     max-height: 100%; 
-    color:#bef8fa;
+    color:#dfdfe2;
+    text-shadow: 1px 1px 2px #3b55eb, 0 0 1em blue, 0 0 0.2em blue;
+    text-transform: uppercase;
 }
 h3.tit-end{
     margin:0;
@@ -73,8 +87,15 @@ h3.tit-end{
     font-size:clamp(1.2rem, 1.1vw, 1.3rem);
     box-shadow: 0 0 .5rem #808bc9;
 }
+
 p.Ender{
     margin-bottom: 10px;
+}
+p.site-mapa{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items: center; 
+    box-shadow:none;   
 }
 .a_tela{
     text-decoration: none;
@@ -86,6 +107,11 @@ p.Ender{
     max-width: 100%;
     max-height:100%;
     box-shadow: 0 0 .5rem #808bc9;
+}
+.a-site-map{
+    margin:0 10px;
+    text-align: center;
+  
 }
 .pg{
     text-decoration: none;
@@ -100,13 +126,13 @@ p.Ender{
     box-shadow: 0 0 .5rem #808bc9;
     font-size:clamp(1.2rem, 1.1vw, 1.3rem);
 }
-.pg:hover{
+
+.a_tela:hover, .pg:hover{
     cursor:pointer;
-    background-image:linear-gradient(-45deg, #55679e, #176ee0, #2C3759, #3264A6, #2C3759);
-    color:#bba0a0;
-
+    color:#ffffff;
+    background-image:linear-gradient(-45deg, #55679e, #176ee0, #2C3759, #3264A6, #2C3759);   
 }
-
-.a_tela:hover{
-    color:#ee9d9d;
+.a_tela:active, .pg:active{
+    transform:scale(.98);
+    background-image:linear-gradient(45deg,  #2C3759, #3264A6, #2C3759, #176ee0, #55679e);
 }
