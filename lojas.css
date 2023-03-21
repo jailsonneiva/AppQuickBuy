@@ -1,28 +1,27 @@
 section#tela1{
     background-image:linear-gradient(-45deg, #2C3759, #3264A6, #2C3759, #3264A6, #2C3759);
     margin:10px auto 0;
-    padding:0;
-    width:clamp(25rem, 3vw, 4rem);
+    padding:3.5em 0 0;
+    width:clamp(27rem, 2vw, 4rem);
     height:clamp(52rem, 3vw, 4rem);
     background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoJdCM0Xjy3b8uBdpNItE0eYYj3YTmadSD5yPsdWOphIYUuHKbVSpBwHCApsGvmT7jw2UBkWUmszu_YGhRmFdyqelqTNgm3Fu6viiThQV_X_cWxPlH_Aomxow8krRlPKxF2RPvlRobkA_OcAzf2p0XhbafQQuQTA2CsPcp3NOkUnXhVSA3cQCABcyuag/s320/tel4.png");
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
 div#quickSearchImg{
-    margin:0;
-    padding:0;
+    margin:1.2em auto 0;
+    padding:0 0 10px;
     text-align: center;
-    width:clamp(25rem, 2vw, 3rem);
+    width:90%;
     max-height:100%;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    border-radius: 50px;
 }
 #quick-img{
-    margin:5em auto 0;
+    margin:2em auto 0;
     padding:0;
     max-width: 100%;
     max-height: 100%;
@@ -43,13 +42,6 @@ div#quickSearchImg{
 }
 span.label{
     color:#fff;
-}
-div.informeLoja{
-    margin:20px auto 0;
-    padding:0 ;
-    width:clamp(22.5rem, 2vw, 3rem);
-    height:clamp(36rem, 1vw, 3rem);
-    border-radius:30px 30px 30px 30px;
 }
 div.informeMap iframe{
     margin:20px auto 0;
@@ -87,15 +79,24 @@ h3.tit-end{
     font-size:clamp(1.2rem, 1.1vw, 1.3rem);
     box-shadow: 0 0 .5rem #808bc9;
 }
-
 p.Ender{
     margin-bottom: 10px;
+}
+.pp{
+margin:10px;
 }
 p.site-mapa{
     display:grid;
     grid-template-columns:1fr 1fr;
     align-items: center; 
-    box-shadow:none;   
+    box-shadow:none; 
+    max-width: 100%;
+    max-height:100%;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding:0;
+    margin:1.3em auto;
 }
 .a_tela{
     text-decoration: none;
@@ -103,7 +104,7 @@ p.site-mapa{
     color:#ff0;
     display:block;
     margin:0;
-    padding:10px;
+    padding:15px;
     max-width: 100%;
     max-height:100%;
     box-shadow: 0 0 .5rem #808bc9;
@@ -111,7 +112,6 @@ p.site-mapa{
 .a-site-map{
     margin:0 10px;
     text-align: center;
-  
 }
 .pg{
     text-decoration: none;
@@ -119,20 +119,39 @@ p.site-mapa{
     color:#bd7ee7;
     display:block;
     text-align: center;
-    margin:0 30px;
+    margin:0;
     padding:10px;
     max-width: 100%;
     max-height:100%;
     box-shadow: 0 0 .5rem #808bc9;
     font-size:clamp(1.2rem, 1.1vw, 1.3rem);
 }
-
+p.inicial{
+    margin:11.5em 0 0 0;
+    padding:0;
+    max-width: max-content;
+    max-height:max-content;
+    color:#fff;
+    display: flex;
+}
+.pginicio1, .pginicio2{
+    padding:10px;
+    font-weight: bolder;
+    color:#fff;
+}
+.pginicio2{
+    margin-left:5em;
+}
+.pginicio1{
+    margin-left:6em;
+}
 .a_tela:hover, .pg:hover{
     cursor:pointer;
-    color:#ffffff;
+    color:yellow;
     background-image:linear-gradient(-45deg, #55679e, #176ee0, #2C3759, #3264A6, #2C3759);   
 }
 .a_tela:active, .pg:active{
     transform:scale(.98);
     background-image:linear-gradient(45deg,  #2C3759, #3264A6, #2C3759, #176ee0, #55679e);
+    
 }
